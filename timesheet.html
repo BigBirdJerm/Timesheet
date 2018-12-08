@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee Data Directory</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Jumbotron -->
+    <div class="jumbotron"><h1 class="text-center">Employee Sign Up</h1></div>
+    <div class="container">
+      <br />
+      <!-- Most Recent Member Card -->
+      <div class="row">
+        <div class="card card-default">
+          <div class="card-header">Current Employees</div>
+          <div class="card-body" id="recent-member">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Employee Name</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Start Date</th>
+                  <th scope="col">Months worked</th>
+                  <th scope="col">Monthly Rate</th>
+                  <th scope="col">Total Billed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Jeremy Holthaus</th>
+                  <td>Master</td>
+                  <td>10/15/2018</td>
+                  <td>3</td>
+                  <td>$7000</td>
+                  <td>$21000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Devon Gillaird</th>
+                  <td>Driver</td>
+                  <td>10/15/2018</td>
+                  <td>3</td>
+                  <td>$7000</td>
+                  <td>$21000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Monique Morales</th>
+                  <td>Project Manager</td>
+                  <td>10/15/2018</td>
+                  <td>3</td>
+                  <td>$7000</td>
+                  <td>$21000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cuong Pham</th>
+                  <td>Back-end Dev</td>
+                  <td>10/15/2018</td>
+                  <td>3</td>
+                  <td>$7000</td>
+                  <td>$21000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Sign-Up Card -->
+        <div class="row">
+          <div class="card card-default">
+            <div class="card-header">New Employee Sign-Up</div>
+            <div class="card-body">
+              <!-- Sign-up Form (note the various input "types") -->
+              <form role="form">
+                <div class="form-group row">
+                  <label for="name-input">Name:</label>
+                  <input class="form-control" id="name-input" type="text" />
+                </div>
+                <div class="form-group row">
+                  <label for="role-input">Role:</label>
+                  <input class="form-control" id="role-input" type="role" />
+                </div>
+                <div class="form-group row">
+                  <label for="start-input">Start Date:</label>
+                  <input class="form-control" id="start-input" type="text" />
+                </div>
+                <div class="form-group row">
+                  <label for="worked-input">Months Worked:</label>
+                  <input
+                    class="form-control"
+                    id="worked-input"
+                    rows="5"
+                  ></input>
+                </div>
+                <div class="form-group row">
+                        <label for="rate-input">Monthly Rate:</label>
+                        <input class="form-control" id="rate-input" type="text" />
+                      </div>
+                      <div class="form-group row">
+                            <label for="total-input">Total Billed:</label>
+                            <input class="form-control" id="total-input" type="text" />
+                          </div>
+                <button class="btn btn-default" id="add-user" type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
